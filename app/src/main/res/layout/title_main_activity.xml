@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_activity_main_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:paddingRight="10dp"
+            android:text="签到"
+            android:textColor="@color/wjf_font_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:drawablePadding="1dp"
+            android:padding="10dp"
+            android:id="@+id/tv_activity_main_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_activity_main_sign"
+            android:layout_toRightOf="@id/tv_activity_main_sign"
+            android:drawableRight="@drawable/activity_main_language"
+            android:paddingLeft="@dimen/Dim10"
+            android:text="中文"
+            android:textColor="@color/wjf_font_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_activity_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Logo"
+            android:textColor="@color/login_btn_checked"
+            android:textSize="@dimen/DimS21"
+            />
+        <ImageView
+            android:id="@+id/iv_activity_yh"
+            android:layout_centerVertical="true"
+            android:src="@drawable/activity_main_yh"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:id="@+id/iv_activity_sz"
+            android:layout_toLeftOf="@+id/iv_activity_yh"
+            android:layout_centerVertical="true"
+            android:src="@drawable/activity_main_sz"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_toLeftOf="@+id/iv_activity_sz"
+            android:layout_centerVertical="true"
+            android:src="@drawable/activity_main_fdj"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

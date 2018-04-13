@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/Dim5">
+    <LinearLayout
+        android:paddingRight="@dimen/Dim5"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_item_fragment_film_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="@dimen/DimS14"
+            android:id="@+id/tv_item_fragment_film_title"
+            android:textColor="@color/wjf_font_dark"
+            android:layout_marginTop="@dimen/Dim7"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/DimS13"
+            android:id="@+id/tv_item_fragment_film_content"
+            android:layout_marginTop="@dimen/Dim5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="@dimen/Dim5"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_item_fragment_film_picture2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="@dimen/DimS14"
+            android:id="@+id/tv_item_fragment_film_title2"
+            android:textColor="@color/wjf_font_dark"
+            android:layout_marginTop="@dimen/Dim7"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/DimS13"
+            android:id="@+id/tv_item_fragment_film_content2"
+            android:layout_marginTop="@dimen/Dim5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

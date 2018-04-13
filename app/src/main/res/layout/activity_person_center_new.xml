@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:collapsedTitleTextAppearance="@style/ToolBarTitleText"
+            app:contentScrim="#46a8ba"
+            app:expandedTitleMarginEnd="48dp"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleTextAppearance="@style/transparentText"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <LinearLayout
+                android:id="@+id/head_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    android:background="@drawable/person_center_bg"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="76dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/iv_person_center_head_portrait"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1.5"
+                            android:src="@drawable/person_center_tx" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_person_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gemini"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp" />
+                                <!--以前的写法现在用cardView来写背景阴影-->
+                                <!--<RelativeLayout-->
+                                <!--android:layout_width="30dp"-->
+                                <!--android:layout_height="13dp"-->
+                                <!--android:layout_alignBottom="@+id/tv_person_name"-->
+                                <!--android:layout_marginLeft="5dp"-->
+                                <!--android:layout_toEndOf="@+id/tv_person_name"-->
+                                <!--android:layout_toRightOf="@+id/tv_person_name"-->
+                                <!--android:background="@drawable/person_level_background"-->
+                                <!--android:gravity="center">-->
+
+                                <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="LV.3"-->
+                                <!--android:textColor="#4597fc"-->
+                                <!--android:textSize="10sp" />-->
+                                <!--</RelativeLayout>-->
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="33dp"
+                                    android:layout_height="13dp"
+                                    android:layout_alignBottom="@+id/tv_person_name"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toEndOf="@+id/tv_person_name"
+                                    android:layout_toRightOf="@+id/tv_person_name"
+                                    android:background="@drawable/person_level_background"
+                                    android:gravity="center"
+                                    app:cardBackgroundColor="@color/white"
+                                    app:cardCornerRadius="5dp"
+                                    app:cardElevation="0dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="LV.3"
+                                        android:textColor="#4597fc"
+                                        android:textSize="10sp" />
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="积分:"
+                                    android:textColor="@color/white"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_person_center_integral"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="7dp"
+                                    android:drawableLeft="@drawable/person_center_jf"
+                                    android:drawablePadding="5dp"
+                                    android:drawableRight="@drawable/person_center_more"
+                                    android:text="120"
+                                    android:textColor="@color/white"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_person_center_sign"
+                            android:layout_width="40dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/person_center_sign_style"
+                            android:gravity="center"
+                            android:text="签到"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:gravity="center"
+                android:theme="@style/Base.ThemeOverlay.AppCompat.ActionBar"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <include layout="@layout/title_return_top"/>
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="个人中心" />-->
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_person_center_play_history"
+                    style="@style/person_center_text_view"
+                    android:drawableLeft="@drawable/person_center_ls"
+                    android:text="播放历史" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcv_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:paddingLeft="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@color/wjf_bg" />
+
+                <TextView
+                    android:id="@+id/tv_person_center_collection_record"
+                    style="@style/person_center_text_view"
+                    android:drawableLeft="@drawable/person_center_sc"
+                    android:text="收藏记录" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@color/wjf_bg" />
+
+                <TextView
+                    android:id="@+id/tv_person_center_offline_caching"
+                    style="@style/person_center_text_view"
+                    android:drawableLeft="@drawable/person_center_hc"
+                    android:text="离线缓存" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@color/wjf_bg" />
+
+                <TextView
+                    android:id="@+id/tv_person_center_video_upload"
+                    style="@style/person_center_text_view"
+                    android:drawableLeft="@drawable/person_center_spsc"
+                    android:text="视频上传" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_person_center_integral_center"
+                    style="@style/person_center_text_view"
+                    android:drawableLeft="@drawable/person_center_jf2"
+                    android:text="积分中心" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@color/wjf_bg" />
+
+                <TextView
+                    android:id="@+id/tv_person_center_cash_center"
+                    style="@style/person_center_text_view"
+                    android:drawableLeft="@drawable/person_center_cz"
+                    android:text="提现中心" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@color/wjf_bg" />
+
+                <TextView
+                    android:id="@+id/tv_person_center_charge_center"
+                    style="@style/person_center_text_view"
+                    android:drawableLeft="@drawable/person_center_cz"
+                    android:text="充值中心" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_person_center_subscribed_channels"
+                style="@style/person_center_text_view"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/person_center_dy"
+                android:text="订阅频道" />
+
+            <TextView
+                android:id="@+id/tv_person_center_complaint_proposal"
+                style="@style/person_center_text_view"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/person_center_ts"
+                android:text="投诉建议" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="500dp">
+
+                <include layout="@layout/bottom_layout_copyright" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="37dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Copyright@2008xxx.com版权所有" />
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

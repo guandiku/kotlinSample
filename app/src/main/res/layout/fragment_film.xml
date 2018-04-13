@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/item_home_page_item"/>
+    <RadioGroup
+        android:id="@+id/rg_item_select"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/Dim5"
+        android:paddingLeft="@dimen/Dim10"
+        android:paddingTop="@dimen/Dim5"
+        android:weightSum="10">
+
+        <RadioButton
+            android:id="@+id/rb_european_and_american_films"
+            style="@style/fragment_film_switch"
+            android:text="欧美电影" />
+
+        <RadioButton
+            android:id="@+id/rb_chinese_films"
+            style="@style/fragment_film_switch"
+            android:layout_marginLeft="@dimen/Dim10"
+            android:text="国产电影" />
+
+        <RadioButton
+            android:id="@+id/rb_japanese_films"
+            style="@style/fragment_film_switch"
+            android:layout_marginLeft="@dimen/Dim10"
+            android:text="日本电影" />
+
+        <RadioButton
+            android:id="@+id/rb_korean_films"
+            style="@style/fragment_film_switch"
+            android:layout_marginLeft="@dimen/Dim10"
+            android:text="韩国电影" />
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_fragment_film_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/Dim5"
+        android:layout_marginLeft="@dimen/Dim5"
+        android:layout_marginRight="@dimen/Dim5" />
+</LinearLayout>

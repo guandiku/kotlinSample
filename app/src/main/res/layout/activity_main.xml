@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_fragment_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/title_main_activity" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/Dim10"
+                    android:weightSum="6">
+
+                    <net.lucode.hackware.magicindicator.MagicIndicator
+
+                        android:id="@+id/magic_indicator4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/Dim5"
+                        android:layout_weight="5.5" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:id="@+id/iv_activity_main_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/Dim10"
+                            android:src="@drawable/activity_main_more" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--轮播图-->
+                <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/banner_activity_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:indicator_drawable_selected="@drawable/banner_point_selected_radius"
+                    app:indicator_drawable_unselected="@drawable/banner_point_unselected_radius"
+                    app:indicator_height="8dp"
+                    app:indicator_margin="4dp"
+                    app:indicator_width="8dp" />
+                <!--跑马灯-->
+                <com.xiamen.www.myapplication3.kotlin.view.comstom.MarqueeTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="30dp"
+                    android:drawableLeft="@drawable/activity_main_lb"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:padding="@dimen/Dim10"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:text="系统通知：官方网站系统维修，将暂时停止浏览，请各位观众及时关注消息谢谢。"
+                    android:textColor="@color/wjf_font_dark"
+                    android:textSize="@dimen/DimS12" />
+
+
+                <!--电影分类-->
+                <FrameLayout
+                    android:id="@+id/fl_fragment_home_film_classification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp" />
+
+                <!--热门推荐-->
+                <FrameLayout
+                    android:id="@+id/fl_fragment_home_popular_recommendation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--最新资讯-->
+                <FrameLayout
+                    android:id="@+id/fl_fragment_home_latest_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--Copyright@2018xxx.com 版权有所-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom">
+
+                    <include layout="@layout/bottom_layout_copyright" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

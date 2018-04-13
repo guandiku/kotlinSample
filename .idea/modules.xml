@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../NewkTool/Base/Base.iml" filepath="$PROJECT_DIR$/../NewkTool/Base/Base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../NewkTool/CrossWalk/CrossWalk.iml" filepath="$PROJECT_DIR$/../NewkTool/CrossWalk/CrossWalk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KotlinNewVideo.iml" filepath="$PROJECT_DIR$/KotlinNewVideo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../NewkTool/Network/Network.iml" filepath="$PROJECT_DIR$/../NewkTool/Network/Network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../NewkTool/NewkTool.iml" filepath="$PROJECT_DIR$/../NewkTool/NewkTool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../NewkTool/ToolsLib/ToolsLib.iml" filepath="$PROJECT_DIR$/../NewkTool/ToolsLib/ToolsLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../NewkTool/Umeng/Umeng.iml" filepath="$PROJECT_DIR$/../NewkTool/Umeng/Umeng.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

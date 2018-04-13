@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:src="@drawable/left_return" />
+
+        <RadioGroup
+            android:id="@+id/rg_select_tab"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_tab_login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_left_button"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/login_left_button"
+                android:textSize="17sp" />
+
+            <RadioButton
+                android:id="@+id/btn_tab_register"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/register_right_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text="注册"
+                android:textColor="@color/login_left_button"
+                android:textSize="17sp" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

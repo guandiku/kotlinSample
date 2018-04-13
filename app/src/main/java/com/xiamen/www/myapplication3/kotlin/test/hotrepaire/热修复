@@ -1,0 +1,53 @@
+插件开发
+
+Bug
+新的版本
+热修复
+bug
+
+dex分包
+1.65536的问题
+2.热修复
+
+
+热修复
+1.底层黑科技。
+从c入手，
+杀到进程加载的类二进制数据，把内存里面的二进制数据改了。
+阿里系的技术。Dexposed andfix
+
+2.基于android和java的类加载机制入手，
+腾讯系，携程，美团之类的
+
+
+ClassLoader机制
+
+安卓是如何加载classes.dex文件的
+java是读取 .class文件
+
+
+
+PathClassLoader  用来加载应用程序的dex
+
+DexClassLoader 可以用来加载指定的某些dex文件  dalvik虚拟机提供的便捷方法
+dalvik虚拟机的 这两个类是
+AndroidStudio ---- Instance Run
+点击运行的时候，提高运行速度
+用的技术就是multiDex技术 ，把你只修改的这一个代码打包成dex，发送到手机，然后热修复。
+
+findClass()方法
+我们要把修复好的class打包成dex文件，classes2.dex文件，发送到手机客户端里面。
+把classes2.dex加到dexElements最前面，就可以达到修复的目的。
+
+classes1.dex
+classes2.dex
+.
+.
+.
+---------------------------------------------------------------------------------
+
+如何把class打包成dex
+手动打包
+dex工具 ---build-tools-->aapt aidl dx.bat . xxxx
+
+android6.0源码 11GB ---->libcore/dalvik/src/main/java/dalvik/system/

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <include layout="@layout/title_return_top" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/settings_text_view"
+                android:layout_marginTop="10dp"
+                android:text="账号安全" />
+
+            <TextView
+                style="@style/settings_text_view"
+                android:layout_marginTop="10dp"
+                android:text="播放和缓存" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/Dim10"
+                android:layout_marginRight="@dimen/Dim10"
+                android:background="#eeeeee" />
+
+            <TextView
+                style="@style/settings_text_view"
+                android:text="常用功能" />
+
+            <TextView
+                style="@style/settings_text_view"
+                android:layout_marginTop="10dp"
+                android:text="消息推送" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/Dim10"
+                android:layout_marginRight="@dimen/Dim10"
+                android:background="#eeeeee" />
+
+            <TextView
+                style="@style/settings_text_view"
+                android:text="我的皮肤" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/Dim10"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="收藏记录">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清理缓存"
+                    android:textColor="@color/wjf_font_dark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="4.56M"
+                    android:textColor="#999999" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="退出登录"
+                android:textColor="#ff2c2c" />
+
+            <FrameLayout
+               android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <include
+                    layout="@layout/bottom_layout_copyright" />
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

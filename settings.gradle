@@ -1,0 +1,12 @@
+include ':app'
+include ':NewkTool'
+//project(':NewkTool').projectDir = new File('NewkTool')
+/***
+ * 可以用的
+ */
+project(':NewkTool').projectDir = new File('../NewkTool/')
+include ':NewkTool:ToolsLib'
+include ':NewkTool:Base'
+include ':NewkTool:Network'
+include ':NewkTool:Umeng'
+include ':NewkTool:CrossWalk'
