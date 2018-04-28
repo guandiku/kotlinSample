@@ -1,6 +1,7 @@
 package com.xiamen.www.myapplication3.kotlin.view.login
 
 import android.support.v4.content.ContextCompat
+import com.jakewharton.rxbinding2.view.RxView
 import com.jakewharton.rxbinding2.widget.RxTextView
 import com.jakewharton.rxbinding2.widget.textChanges
 import com.mtool.toolslib.core.androidInAndroidOut
@@ -14,6 +15,11 @@ import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.fragment_login.*
 import org.jetbrains.anko.textColor
 import java.util.concurrent.TimeUnit
+import android.R.attr.button
+import android.util.Log
+import com.jakewharton.rxbinding2.view.clicks
+import com.mtool.toolslib.base.core.ext.TAG
+
 
 /**
  * Created by White on 2018/3/8.
@@ -72,6 +78,13 @@ class LoginFragment : BaseFragment() {
         isFillComplete.subscribe {
             btn_login.isEnabled = it
         }
+
+       btn_login.clicks()
+               .throttleFirst(2,TimeUnit.SECONDS)
+               .subscribe {
+                   Log.d(TAG(),"yes")
+               }
+
 
 
     }

@@ -1,4 +1,4 @@
-package com.xiamen.www.myapplication3.kotlin.rxjava
+package com.xiamen.www.myapplication3.kotlin.rxjava.rxtest
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -6,12 +6,9 @@ import android.util.Log
 import com.xiamen.www.myapplication3.R
 import io.reactivex.*
 import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.disposables.Disposable
 import io.reactivex.functions.BiFunction
-import io.reactivex.functions.Consumer
 import io.reactivex.schedulers.Schedulers
 import java.util.concurrent.TimeUnit
-import java.util.function.Function
 
 /**
  * Created by White on 2018/3/20.

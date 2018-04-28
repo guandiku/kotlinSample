@@ -1,6 +1,8 @@
 package com.xiamen.www.myapplication3.kotlin.view.activity;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.MessageQueue;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;

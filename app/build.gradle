@@ -20,6 +20,9 @@ android {
         flavorDimensions "default"
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
+
+        //添加如下配置就OK了
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
     }
     buildTypes {
         release {
@@ -131,5 +134,11 @@ dependencies {
     kapt deps.permissions_dispatcher_processor
     compile 'com.jaeger.statusbaruitl:library:1.1.1'
 
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+
+    //注解库 用于生成application类 provided编译不打包
+    provided('com.tencent.tinker:tinker-android-anno:1.7.7'){ changing = true }
+    //是否将依赖关系标记为正在改变
+    //tinker的核心库 compile编译并打包
+    compile('com.tencent.tinker:tinker-android-lib:1.7.7'){ changing = true }
 }

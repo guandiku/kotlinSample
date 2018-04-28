@@ -1,4 +1,4 @@
-package com.xiamen.www.myapplication3.kotlin.rxjava;
+package com.xiamen.www.myapplication3.kotlin.rxjava.rxtest;
 
 
 import android.util.Log;

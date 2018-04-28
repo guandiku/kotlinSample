@@ -16,10 +16,13 @@ class AppBase : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        context = this
+        context = applicationContext
         registerActivityLifecycleCallbacks(ActivityManager.callback)
     }
 
+    /**
+     * 调用时刻：应用程序结束时调用
+     */
     override fun onTerminate() {
         super.onTerminate()
         ActivityManager.finishAllActivity()
@@ -42,6 +45,15 @@ class AppBase : Application() {
             Pair(it.versionCode, it.versionName)
         }
 
+    }
+
+    /**
+     * 作用：监听临时Android系统整体内存较低时刻（兼容android 4.0以下）
+     *
+     * 调用时刻：Android系统整体内存较低时
+     */
+    override fun onLowMemory() {
+        super.onLowMemory()
     }
 
 

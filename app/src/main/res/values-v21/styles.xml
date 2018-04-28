@@ -1,25 +1,26 @@
 <resources>
 
+
     <!-- Base application theme. -->
     <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowAnimationStyle">@style/activity_animation</item>
-        <item name="android:windowBackground">@color/background_gray</item>
+        <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">false</item>
         <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
-    <style name="activity_animation" parent="@android:style/Animation.Activity">
-        <item name="android:activityOpenEnterAnimation">@anim/in_from_right</item>
-        <item name="android:activityOpenExitAnimation">@anim/out_to_left</item>
-        <item name="android:activityCloseExitAnimation">@anim/out_to_left</item>
-        <item name="android:activityCloseEnterAnimation">@anim/in_from_right</item>
-    </style>
+    <!--<style name="activity_animation" parent="@android:style/Animation.Activity">-->
+        <!--<item name="android:activityOpenEnterAnimation">@anim/in_from_right</item>-->
+        <!--&lt;!&ndash;<item name="android:activityOpenExitAnimation">@anim/out_to_left</item>&ndash;&gt;-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/out_to_left</item>-->
+        <!--&lt;!&ndash;<item name="android:activityCloseEnterAnimation">@anim/in_from_right</item>&ndash;&gt;-->
+    <!--</style>-->
 
     <!--mainlayout里RadioGroup-->
     <style name="mainradiobutton">

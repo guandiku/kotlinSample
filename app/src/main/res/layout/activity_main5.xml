@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.xiamen.www.myapplication3.kotlin.rxjava.Main5Activity">
+    tools:context="com.xiamen.www.myapplication3.kotlin.rxjava.rxtest.Main5Activity">
 
     <Button
         android:enabled="false"

@@ -1,4 +1,4 @@
-package com.xiamen.www.myapplication3.kotlin.rxjava;
+package com.xiamen.www.myapplication3.kotlin.rxjava.rxtest;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -553,7 +553,19 @@ public class Main5Activity extends AppCompatActivity {
      */
     public void send(View view) {
 
-
+//        //1.链式调度
+//        Observable.create(new OnSubscrible<String>() {
+//            @Override
+//            public void call(Subscrible<? super String> subscrible) {
+//                subscrible.onNext("男生：走看电影去");
+//            }
+//        }).subSrible(new Subscrible<String>() {
+//            @Override
+//            public void onNext(String s) {
+//                System.out.println(s);
+//                System.out.println("好的，可以一起去看电影");
+//            }
+//        });
 //
 //        //1.链式调度
 //        Observable.create(new OnSubscrible<String>() {

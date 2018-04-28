@@ -1,4 +1,4 @@
-package com.xiamen.www.myapplication3.kotlin.rxjava
+package com.xiamen.www.myapplication3.kotlin.rxjava.rxtest
 
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers

@@ -1,12 +1,15 @@
 package com.xiamen.www.myapplication3.kotlin.view.activity
 
 import android.content.pm.ActivityInfo
+import android.os.Build
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
+import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.view.Window
+import android.view.WindowManager
 import org.jetbrains.anko.doFromSdk
 
 /**
@@ -20,6 +23,8 @@ abstract class BaseActivity : AppCompatActivity() {
             doFromSdk(21) {
                 //android版本21以上允许使用transitions
                 window.requestFeature(Window.FEATURE_CONTENT_TRANSITIONS)
+                window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)
+                requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
             }
             setContentView(setLayoutResource())
             //设置屏幕方向为竖向
@@ -68,7 +73,6 @@ abstract class BaseActivity : AppCompatActivity() {
     fun AppCompatActivity.hideFragment(fragment: Fragment) {
         supportFragmentManager.inTransaction { hide(fragment) }
     }
-
 
 
 }

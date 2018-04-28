@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiamen.www.myapplication3.kotlin.test.hotrepaire.Main12Activity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="202dp"
+        android:layout_x="121dp"
+        android:layout_y="154dp"
+        android:text="test" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="154dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="42dp"
+        android:layout_x="124dp"
+        android:layout_y="224dp"
+        android:text="fix" />
+
+    <Button
+        android:id="@+id/button_fix"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="154dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="42dp"
+        android:layout_x="129dp"
+        android:layout_y="345dp"
+        android:text="fix_tinker" />
+
+    <!--<Button-->
+        <!--android:id="@+id/button4"-->
+        <!--android:layout_width="158dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginLeft="154dp"-->
+        <!--android:layout_marginStart="154dp"-->
+        <!--android:layout_marginTop="42dp"-->
+        <!--android:layout_x="129dp"-->
+        <!--android:layout_y="445dp"-->
+        <!--android:text="fix_tinker2" />-->
+
+</AbsoluteLayout>
