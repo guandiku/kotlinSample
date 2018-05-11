@@ -22,8 +22,9 @@ public class Handler {
 
     public void sendMessage(Message msg) {
 
-        //Looper循环中发现message后，调用message.targer就得到了当前handler，使用taget.handleMessage
-        //就把消息转发给了发送message时的handler的handleMessage函数
+        //Looper循环中发现message后，
+        // 调用message.target，
+        // target.handleMessage 就把消息转发给了发送message时的handler的handleMessage函数
         msg.target=this;
 
         messageQueue.enqueueMessage(msg);

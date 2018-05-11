@@ -5,7 +5,8 @@
     <color name="colorAccentDark">#d74e7e</color>
     <color name="colorAccentLight">#f59aba</color>
 
-
+    <color name="color_item_press">#ffff0000</color>
+    <color name="color_item_normal">#44ff0000</color>
     <color name="empty_color">#d0d1d3</color>
     <color name="popup_linear">#5e6063</color>
     <color name="more">#C3CDE3</color>

@@ -19,11 +19,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- 这个标签开判断我们生成的patch的.apk文件中的tinker_id_XXX
-         与我们的版本号tinker_id_XXX比较。相同合法，不同则不会进行更新 -->
+        <!--
+         这个标签开判断我们生成的patch的.apk文件中的tinker_id_XXX
+         与我们的版本号tinker_id_XXX比较。相同合法，不同则不会进行更新
+        -->
         <meta-data
             android:name="TINKER_ID"
-            android:value="tinker_id_110"/>
+            android:value="tinker_id_110" />
 
         <!-- <activity android:name=".kotlin.view.activity.MainActivity"> -->
         <!-- <intent-filter> -->
@@ -81,14 +83,10 @@
         <!-- android:name=".kotlin.view.activity.Main7Activity" -->
         <!-- android:label="@string/title_activity_main7"></activity> -->
         <activity
-            android:name=".kotlin.test.hotrepaire.Main12Activity"
+            android:name=".kotlin.myview.recy.StaggeredGridLayoutActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".kotlin.test.activityjump.Main10Activity"
@@ -99,7 +97,17 @@
         <activity
             android:name=".kotlin.test.handlerthead.Main13Activity"
             android:label="@string/title_activity_main13"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".kotlin.myview.scrollmyselfview.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

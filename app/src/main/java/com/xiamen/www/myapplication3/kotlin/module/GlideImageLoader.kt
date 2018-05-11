@@ -3,6 +3,7 @@ package com.xiamen.www.myapplication3.kotlin.module
 import android.content.Context
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import com.xiamen.www.myapplication3.kotlin.javatest.handler.Looper
 import com.youth.banner.loader.ImageLoader
 
 /**
@@ -14,6 +15,7 @@ class GlideImageLoader : ImageLoader() {
         Glide.with(context.applicationContext)
                 .load(path)
                 .into(imageView)
+       android.os.Looper.prepare();
     }
 
 }

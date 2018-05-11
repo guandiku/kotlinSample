@@ -22,7 +22,7 @@ public class Looper {
         if (threadLocal.get() != null) {
             throw new RuntimeException("Only one Looper may be created per thread");
         }
-        threadLocal.set(new Looper() );
+        threadLocal.set(new Looper());
     }
 
     public static void loop() {
