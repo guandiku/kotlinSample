@@ -314,6 +314,8 @@ class MyRxActivity : AppCompatActivity() {
                     println(it.id)
                 }
 
+
+
     }
 
 
