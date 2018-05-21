@@ -23,7 +23,6 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
-import com.jaeger.library.StatusBarUtil;
 import com.mtool.toolslib.view.custom.glide.BlurTransformation;
 import com.xiamen.www.myapplication3.R;
 
@@ -97,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
      * 设置毛玻璃效果和沉浸状态栏
      */
     private void loadBlurAndSetStatusBar() {
-        StatusBarUtil.setTranslucent(this, StatusBarUtil.DEFAULT_STATUS_BAR_ALPHA);
+//        StatusBarUtil.setTranslucent(this, StatusBarUtil.DEFAULT_STATUS_BAR_ALPHA);
         Glide.with(this).load(R.mipmap.bg).apply(new RequestOptions().transform(new BlurTransformation(this,25))).into(new SimpleTarget<Drawable>() {
             @Override
             public void onResourceReady(Drawable resource, Transition<? super Drawable> transition) {

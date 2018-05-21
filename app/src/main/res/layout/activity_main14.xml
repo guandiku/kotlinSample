@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xiamen.www.myapplication3.kotlin.myview.viewtest.CircleView
+        android:id="@+id/circleView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/Dim20"
+        android:padding="@dimen/Dim20"
+        app:circle_color="@color/cancel_tv" />
+</LinearLayout>

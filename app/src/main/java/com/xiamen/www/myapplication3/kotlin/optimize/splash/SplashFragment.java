@@ -22,7 +22,7 @@ public class SplashFragment extends Fragment {
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_splash, container, false);
-        button = (Button) view.findViewById(R.id.frame);
+        button =  view.findViewById(R.id.frame);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

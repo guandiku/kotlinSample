@@ -85,9 +85,7 @@
         <activity
             android:name=".kotlin.myview.recy.StaggeredGridLayoutActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".kotlin.test.activityjump.Main10Activity"
             android:launchMode="singleTop"
@@ -108,6 +106,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".kotlin.myview.viewtest.Main14Activity" />
+        <activity android:name=".kotlin.myview.rengwuxian.Main15Activity"></activity>
     </application>
 
 </manifest>
